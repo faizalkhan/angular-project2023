@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "f75b8186-8ce5-4f66-8bea-7595c7967232",
+		"name": "Price Analytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emailId\": \"java.developer5@dalmiabharat.com\",\r\n    \"password\": \"Dalmia@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com/pricecapture/api/v1/authorize/validateUser",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"path": [
+						"pricecapture",
+						"api",
+						"v1",
+						"authorize",
+						"validateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshToken",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emailId\": \"java.developer5@dalmiabharat.com\",\r\n    \"password\": \"Dalmia@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com/pricecapture/api/v1/authorize/validateUser",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"path": [
+						"pricecapture",
+						"api",
+						"v1",
+						"authorize",
+						"validateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFilter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhLmRldmVsb3BlcjVAZGFsbWlhY2VtZW50LmNvbSIsImV4cCI6MTY2ODc2Mjc3NSwiaWF0IjoxNjY4NzUzNzc1fQ.tWiWBJ0qoTfvZMt2nv8KixtE58ZVdVCLR-X1H7OLVX4B-1sjTcXf549BMlFdlEcKh368Ehe-B1GYY-rd1eEbnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emailId\": \"java.developer5@dalmiabharat.com\",\r\n    \"password\": \"Dalmia@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com/pricecapture/api/v1/authorize/getFilter",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"path": [
+						"pricecapture",
+						"api",
+						"v1",
+						"authorize",
+						"getFilter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPriceDetail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhLmRldmVsb3BlcjVAZGFsbWlhY2VtZW50LmNvbSIsImV4cCI6MTY2ODc1MzQyMywiaWF0IjoxNjY4NzUzMzYzfQ.cF7EDycL1w4ko24eHSvTUCey0t7HLqmjE0ALwYSH-IUgge5McT3uY0QDei-OYXIlsDaw20NiW27H2bzs5X54CQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com/pricecapture/api/v1/pricedata/getPriceDetail?regionid=EAST&stateid=BHN&productCat=DCFT&role=SH",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"path": [
+						"pricecapture",
+						"api",
+						"v1",
+						"pricedata",
+						"getPriceDetail"
+					],
+					"query": [
+						{
+							"key": "regionid",
+							"value": "EAST"
+						},
+						{
+							"key": "stateid",
+							"value": "BHN"
+						},
+						{
+							"key": "productCat",
+							"value": "DCFT"
+						},
+						{
+							"key": "role",
+							"value": "SH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schemeGetConfig",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhLmRldmVsb3BlcjVAZGFsbWlhY2VtZW50LmNvbSIsImV4cCI6MTY3MDg1MjE3OCwiaWF0IjoxNjcwODQzMTc4fQ.XzAwwG3QsH-Enl2FJK57b25vphJ0B3u2sRLz14HPzBt9htV6WHghOgHA6ah_B-HYm11RZ17QBZIvwW7wK5uMaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"detail\": [\r\n        {\r\n            \"id\": \"91\"\r\n        }\r\n    ]\r\n\r\n\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com/pricecapture/api/v1/schemesdata/schemeDeleteConfig",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"path": [
+						"pricecapture",
+						"api",
+						"v1",
+						"schemesdata",
+						"schemeDeleteConfig"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

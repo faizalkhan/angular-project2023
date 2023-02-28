@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "1b6c350d-fe29-469d-984f-8912378ddc8c",
+		"name": "Root Cause",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sold to party select box",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "X-AppName",
+						"value": "SMARTD"
+					},
+					{
+						"key": "X-ReferenceId",
+						"value": "aE8LZOWV6++N5TFkR4D/0w=="
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbXAwMDA2NTQwIiwiYXBwVmVyc2lvbiI6IjYuMy4wIiwiYXBwTmFtZSI6IlNNQVJURCIsImV4cCI6MTY2Njk3NzUyNCwiZGV2aWNlSWQiOiIxNjVjMzRjMi02YTNkLTRlYWItYjk5Ni1kOTkyODU0YjQ0ODYiLCJpYXQiOjE2NjY5NDg3MjR9.HX6nFjoKx_oszQVqRX0wruzSaLclU_Q2_N7fkYF2-yu3abESKekY-2t6iOceEvTEIkkmxHvtxdkXnnrvjpPNaQ"
+					}
+				],
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com:443/dalmiabharat-smartd/dash/getDealerListBySalesState?salesState=KAN",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"dalmiabharat-smartd",
+						"dash",
+						"getDealerListBySalesState"
+					],
+					"query": [
+						{
+							"key": "salesState",
+							"value": "KAN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ship to party select box",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "X-AppName",
+						"value": "SMARTD"
+					},
+					{
+						"key": "X-ReferenceId",
+						"value": "aE8LZOWV6++N5TFkR4D/0w=="
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbXAwMDA2NTQwIiwiYXBwVmVyc2lvbiI6IjYuMy4wIiwiYXBwTmFtZSI6IlNNQVJURCIsImV4cCI6MTY2Njk3NzUyNCwiZGV2aWNlSWQiOiIxNjVjMzRjMi02YTNkLTRlYWItYjk5Ni1kOTkyODU0YjQ0ODYiLCJpYXQiOjE2NjY5NDg3MjR9.HX6nFjoKx_oszQVqRX0wruzSaLclU_Q2_N7fkYF2-yu3abESKekY-2t6iOceEvTEIkkmxHvtxdkXnnrvjpPNaQ"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4200/api/dalmiabharat-smartd/orders/getonlysubdealersdetails/0007015713",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"api",
+						"dalmiabharat-smartd",
+						"orders",
+						"getonlysubdealersdetails",
+						"0007015713"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeliveryPoint select box",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "X-AppName",
+						"value": "SMARTD"
+					},
+					{
+						"key": "X-ReferenceId",
+						"value": "aE8LZOWV6++N5TFkR4D/0w=="
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbXAwMDA2NTQwIiwiYXBwVmVyc2lvbiI6IjYuMy4wIiwiYXBwTmFtZSI6IlNNQVJURCIsImV4cCI6MTY2Njk3NzUyNCwiZGV2aWNlSWQiOiIxNjVjMzRjMi02YTNkLTRlYWItYjk5Ni1kOTkyODU0YjQ0ODYiLCJpYXQiOjE2NjY5NDg3MjR9.HX6nFjoKx_oszQVqRX0wruzSaLclU_Q2_N7fkYF2-yu3abESKekY-2t6iOceEvTEIkkmxHvtxdkXnnrvjpPNaQ"
+					}
+				],
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com:443/dalmiabharat-smartd/dash/getDeliveryPointBySubDealer?subDealerId=0088021214",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"dalmiabharat-smartd",
+						"dash",
+						"getDeliveryPointBySubDealer"
+					],
+					"query": [
+						{
+							"key": "subDealerId",
+							"value": "0088021214"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product select box",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "X-AppName",
+						"value": "SMARTD"
+					},
+					{
+						"key": "X-ReferenceId",
+						"value": "aE8LZOWV6++N5TFkR4D/0w=="
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbXAwMDA2NTQwIiwiYXBwVmVyc2lvbiI6IjYuMy4wIiwiYXBwTmFtZSI6IlNNQVJURCIsImV4cCI6MTY2Njk3NzUyNCwiZGV2aWNlSWQiOiIxNjVjMzRjMi02YTNkLTRlYWItYjk5Ni1kOTkyODU0YjQ0ODYiLCJpYXQiOjE2NjY5NDg3MjR9.HX6nFjoKx_oszQVqRX0wruzSaLclU_Q2_N7fkYF2-yu3abESKekY-2t6iOceEvTEIkkmxHvtxdkXnnrvjpPNaQ"
+					}
+				],
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com:443/dalmiabharat-smartd/dash/getProductList?dealerId=0007015713",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"dalmiabharat-smartd",
+						"dash",
+						"getProductList"
+					],
+					"query": [
+						{
+							"key": "dealerId",
+							"value": "0007015713"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SUBMIT click",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "X-AppName",
+						"value": "SMARTD"
+					},
+					{
+						"key": "X-ReferenceId",
+						"value": "aE8LZOWV6++N5TFkR4D/0w=="
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbXAwMDA2NTQwIiwiYXBwVmVyc2lvbiI6IjYuMy4wIiwiYXBwTmFtZSI6IlNNQVJURCIsImV4cCI6MTY2Njk3NzUyNCwiZGV2aWNlSWQiOiIxNjVjMzRjMi02YTNkLTRlYWItYjk5Ni1kOTkyODU0YjQ0ODYiLCJpYXQiOjE2NjY5NDg3MjR9.HX6nFjoKx_oszQVqRX0wruzSaLclU_Q2_N7fkYF2-yu3abESKekY-2t6iOceEvTEIkkmxHvtxdkXnnrvjpPNaQ"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"dealerId\":\"0007001124\",\r\n    \"deliveryPoint\":null,\r\n    \"incoGroup\":\"FOR\",\r\n    \"material\":\"F01PC000KLP0WM1\",\r\n    \"quantity\":\"1\",\r\n    \"shiptoparty\":\"0007001124\",\r\n    \"transportType\":\"COMPANY\"\r\n    }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com:443/dalmiabharat-smartd/dash/getSAPL1mapping",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"dalmiabharat-smartd",
+						"dash",
+						"getSAPL1mapping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mobileqacloud.dalmiabharat.com:443/dalmiabharat-smartd/dash/getSAPL1mapping",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "X-AppName",
+						"value": "SMARTD"
+					},
+					{
+						"key": "X-ReferenceId",
+						"value": "S4kZGOzL8dvnffKH9AM4cg=="
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJFbXAwMDA3NDE5IiwiYXBwVmVyc2lvbiI6IjYuMi4wIiwiYXBwTmFtZSI6IlNNQVJURCIsImV4cCI6MTY2NzQ4NjI5NCwiZGV2aWNlSWQiOiJmY2I4ZWFlZi0wMzgzLTRlNWYtYTkzMi1lZGZiMTM4Y2I4NzkiLCJpYXQiOjE2Njc0NTc0OTR9.cOmTVF1GdiM5h2v6LyHsgrIReuD0qdJ8hF1HCNpc_T53U-3DBibhuhI9EUi2SGwCS-2QBjlo-oJ3qa64jNeK0w"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"dealerId\": \"0007002014\",\n    \"deliveryPoint\": null,\n    \"incoGroup\": \"FOR\",\n    \"material\": \"F01PC000KLP0WM1\",\n    \"quantity\": \"5\",\n    \"shiptoparty\": \"0007002014\",\n    \"transportType\": \"COMPANY\"\n  }\n]"
+				},
+				"url": {
+					"raw": "https://mobileqacloud.dalmiabharat.com:443/dalmiabharat-smartd/dash/getSAPL1mapping",
+					"protocol": "https",
+					"host": [
+						"mobileqacloud",
+						"dalmiabharat",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"dalmiabharat-smartd",
+						"dash",
+						"getSAPL1mapping"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
